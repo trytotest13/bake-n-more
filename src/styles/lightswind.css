@@ -1,0 +1,118 @@
+/*
+ * lightswind.css - Tailored for Bake 'n' More
+ * Animations, Keyframes, and Standalone Utilities
+ */
+
+:root {
+  --primarylw: #6B3E26;
+  --primarylw-2: #8B4D2B;
+  --accentlw: #E9783F;
+  --highlightlw: #F4C95D;
+  --bg-cream: #FFF9F2;
+  
+  --background: 35 100% 98%;
+  --foreground: 22 21% 14%;
+  --card: 35 100% 99%;
+  --card-foreground: 22 21% 14%;
+  --primary: 21 47% 29%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 35 45% 94%;
+  --secondary-foreground: 22 21% 14%;
+  --muted: 27 25% 92%;
+  --muted-foreground: 22 14% 38%;
+  --accent: 20 81% 58%;
+  --accent-foreground: 0 0% 100%;
+  --border: 27 30% 88%;
+  --input: 27 30% 88%;
+  --ring: 20 81% 58%;
+  --radius: 0.75rem;
+}
+
+/* Keyframes */
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    left: 200%;
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Utility classes */
+.animate-shine {
+  animation: shine 3s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 249, 242, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(238, 220, 206, 0.75);
+}
+
+.glass-panel-warm {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px -10px rgba(107, 62, 38, 0.08);
+  border: 1px solid rgba(233, 120, 63, 0.15);
+}

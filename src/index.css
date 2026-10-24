@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import "./styles/lightswind.css";
+
+/* ============================================
+   Bake 'n' More - Responsive Design System
+   Artisan Bakery & Café Luxury Theme
+   ============================================ */
+
+:root {
+  /* High-End Modern Bakery Palette */
+  --bg-color: #FAF8F5;        /* warm ivory */
+  --bg-subtle: #F4EFEA;
+  --primary-color: #1F1511;   /* rich dark espresso */
+  --accent-color: #E8590C;    /* vibrant warm amber */
+  --highlight-color: #F59F00; /* golden caramel */
+  --text-color: #1A1817;      /* crisp obsidian */
+  --text-muted: #665E58;      /* balanced neutral */
+  --white: #FFFFFF;
+  --card-border: rgba(107, 62, 38, 0.08);
+  --card-shadow: 0 10px 30px -5px rgba(31, 21, 17, 0.06);
+
+  /* Modern Luxury Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Base reset lives in @layer base so Tailwind utilities (utilities layer)
+   can still override it — unlayered CSS would beat every utility. */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  button, input, select, textarea {
+    font-family: var(--font-body);
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Custom Horizontal Scrollbar for category bars */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle Warm Card Shadow */
+.bakery-card-shadow {
+  box-shadow: 0 12px 32px -4px rgba(107, 62, 38, 0.08), 0 4px 12px -2px rgba(107, 62, 38, 0.04);
+}
+
+.bakery-card-shadow-hover {
+  box-shadow: 0 20px 40px -4px rgba(107, 62, 38, 0.14), 0 8px 18px -2px rgba(107, 62, 38, 0.06);
+}

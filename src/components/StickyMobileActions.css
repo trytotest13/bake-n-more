@@ -1,0 +1,61 @@
+/* ============================================
+   Bake 'n' More - Sticky Mobile Actions (Step 6.5)
+   ============================================ */
+
+.sticky-mobile-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sticky-mobile-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    border-top: 1.5px solid var(--card-border);
+    box-shadow: 0 -4px 16px rgba(107, 62, 38, 0.12);
+    padding: 8px 12px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .sticky-action-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 6px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .sticky-action-btn .action-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .sticky-action-btn.call-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+
+  .sticky-action-btn.whatsapp-btn {
+    background-color: #25D366;
+    color: var(--white);
+  }
+
+  .sticky-action-btn.order-btn {
+    background-color: var(--accent-color);
+    color: var(--white);
+  }
+}

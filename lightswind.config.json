@@ -1,0 +1,11 @@
+{
+  "$schema": "https://lightswind.com/schema.json",
+  "framework": "vite",
+  "theme": "bakery",
+  "effect3d": true,
+  "aliases": {
+    "components": "@/components/lightswind",
+    "utils": "@/lib/utils",
+    "styles": "@/styles/lightswind.css"
+  }
+}

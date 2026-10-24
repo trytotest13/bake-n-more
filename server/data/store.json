@@ -1,0 +1,253 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Bake n More Admin",
+      "email": "admin@bakenmore.com",
+      "password_hash": "$2a$10$DM6kVrg35kKFkLU7zzzAYurlbP6y3lT1w5I0gqPcj.337X4N3Uvgy",
+      "role": "admin",
+      "created_at": "2026-09-12T18:30:11.916Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Cakes",
+      "slug": "cakes",
+      "sort_order": 1,
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "name": "Pastries",
+      "slug": "pastries",
+      "sort_order": 2,
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "name": "Pizzas",
+      "slug": "pizzas",
+      "sort_order": 3,
+      "is_active": true
+    },
+    {
+      "id": 4,
+      "name": "Burgers & Rolls",
+      "slug": "burgers",
+      "sort_order": 4,
+      "is_active": true
+    },
+    {
+      "id": 5,
+      "name": "Sandwiches",
+      "slug": "sandwiches",
+      "sort_order": 5,
+      "is_active": true
+    },
+    {
+      "id": 6,
+      "name": "Noodles & South Indian",
+      "slug": "noodles-south-indian",
+      "sort_order": 6,
+      "is_active": true
+    },
+    {
+      "id": 7,
+      "name": "Combos & Offers",
+      "slug": "combos",
+      "sort_order": 7,
+      "is_active": true
+    }
+  ],
+  "menu_items": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "name": "Chocolate Cake",
+      "description": "Rich decadent chocolate sponge layered with smooth chocolate ganache and chocolate shavings.",
+      "price": "Price on request",
+      "image_url": "/assets/menu_cake.jpg",
+      "is_available": true,
+      "is_featured": true,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "name": "Strawberry Cake",
+      "description": "Delicate vanilla sponge infused with fresh strawberry compote and light whipped cream.",
+      "price": "Price on request",
+      "image_url": "/assets/menu_strawberry_cake.jpg",
+      "is_available": true,
+      "is_featured": false,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "name": "Black Forest Cake",
+      "description": "Classic layers of chocolate sponge, whipped vanilla cream, dark cherries and chocolate flakes.",
+      "price": "Price on request",
+      "image_url": "/assets/menu_black_forest_cake.jpg",
+      "is_available": true,
+      "is_featured": true,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 4,
+      "category_id": 2,
+      "name": "Butterscotch Pastry",
+      "description": "Soft vanilla sponge layered with caramelized butterscotch praline and rich cream.",
+      "price": "Price on request",
+      "image_url": "/assets/menu_butterscotch_pastry.jpg",
+      "is_available": true,
+      "is_featured": true,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 5,
+      "category_id": 2,
+      "name": "Choco Chip Pastry",
+      "description": "Loaded with premium dark chocolate chips, creamy chocolate mousse and fudge drizzle.",
+      "price": "Price on request",
+      "image_url": "/assets/menu_pastry.jpg",
+      "is_available": true,
+      "is_featured": false,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 6,
+      "category_id": 3,
+      "name": "Simply Cheese Pizza",
+      "description": "Melted golden mozzarella cheese on our house-made tomato sauce and hand-tossed crust.",
+      "price": "Price on request",
+      "image_url": "/assets/menu_pizza.jpg",
+      "is_available": true,
+      "is_featured": true,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 7,
+      "category_id": 3,
+      "name": "Bake N More Special Pizza",
+      "description": "Chef special loaded with crisp bell peppers, sweet corn, paneer cubes, olives and herbs.",
+      "price": "Price on request",
+      "image_url": "/assets/bakery_food_assortment.jpg",
+      "is_available": true,
+      "is_featured": true,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 8,
+      "category_id": 4,
+      "name": "Veg Cheese Burger",
+      "description": "Crisp seasoned vegetable patty topped with melted cheese, fresh tomato, onion and tangy café sauce.",
+      "price": "Price on request",
+      "image_url": "/assets/menu_burger.jpg",
+      "is_available": true,
+      "is_featured": true,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 9,
+      "category_id": 6,
+      "name": "Masala Dosa",
+      "description": "Crisp golden rice-lentil crepe wrapped around spiced potato masala, served with sambhar and chutneys.",
+      "price": "Price on request",
+      "image_url": "/assets/menu_south_indian.jpg",
+      "is_available": true,
+      "is_featured": true,
+      "is_veg": true,
+      "created_at": "2026-09-12T18:30:11.924Z",
+      "updated_at": "2026-09-12T18:30:11.924Z"
+    }
+  ],
+  "cake_inquiries": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "phone": "+91 98765 43210",
+      "event_date": "2026-09-25",
+      "occasion": "Birthday",
+      "flavour": "Chocolate Truffle",
+      "design": "2-tier superhero theme with fondant accents",
+      "budget": "₹1,500 - ₹2,500",
+      "status": "new",
+      "notes": "Customer requested eggless confirmation",
+      "created_at": "2026-09-12T18:30:11.924Z"
+    },
+    {
+      "id": 2,
+      "name": "Anjali Verma",
+      "phone": "+91 98390 12345",
+      "event_date": "2026-09-30",
+      "occasion": "Anniversary",
+      "flavour": "Black Forest",
+      "design": "Heart shape with fresh roses and cherries",
+      "budget": "₹1,500",
+      "status": "new",
+      "notes": "",
+      "created_at": "2026-09-12T18:31:09.282Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer_name": "Rohit Singh",
+      "phone": "+91 99360 88888",
+      "address": "House 42, Awas Vikas, Kalyanpur, Kanpur",
+      "total_amount": 810,
+      "status": "pending",
+      "payment_status": "pending",
+      "notes": "Please pack napkins and candles",
+      "created_at": "2026-09-12T18:31:09.377Z"
+    }
+  ],
+  "order_items": [
+    {
+      "id": 1,
+      "order_id": 1,
+      "menu_item_id": 1,
+      "item_name": "Chocolate Cake",
+      "quantity": 1,
+      "price": 450,
+      "created_at": "2026-09-12T18:31:09.379Z"
+    },
+    {
+      "id": 2,
+      "order_id": 1,
+      "menu_item_id": 6,
+      "item_name": "Simply Cheese Pizza",
+      "quantity": 2,
+      "price": 180,
+      "created_at": "2026-09-12T18:31:09.379Z"
+    }
+  ],
+  "contact_messages": [
+    {
+      "id": 1,
+      "name": "Vikas Gupta",
+      "phone": "+91 75719 00000",
+      "message": "Do you deliver customized cakes in Keshav Puram Kalyanpur?",
+      "status": "unread",
+      "created_at": "2026-09-12T18:31:09.288Z"
+    }
+  ]
+}
