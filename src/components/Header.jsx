@@ -119,7 +119,7 @@ function Header() {
             {[
               { href: '#home', label: 'Home' },
               { href: '#menu', label: 'Artisan Menu' },
-              { href: '#custom-cakes', label: 'Design Custom Cake 🎂' },
+              { href: '#custom-cakes', label: 'Design Custom Cake' },
               { href: '#about', label: 'About & Quality' },
               { href: '#gallery', label: 'Photo Gallery' },
               { href: '#contact', label: 'Location & Contact' },

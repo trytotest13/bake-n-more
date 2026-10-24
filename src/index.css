@@ -85,6 +85,18 @@
   font-family: var(--font-body);
 }
 
+/* Respect users who prefer reduced motion (WCAG 2.3.3 / UI checklist) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Custom Horizontal Scrollbar for category bars */
 .scrollbar-none::-webkit-scrollbar {
   display: none;

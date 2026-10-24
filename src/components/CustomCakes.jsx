@@ -3,14 +3,14 @@ import cakeImage from '../assets/custom_celebration_cake.jpg';
 import { ShineButton } from './lightswind/ShineButton';
 import { BorderBeam } from './lightswind/BorderBeam';
 import { Badge } from './lightswind/Badge';
-import { MessageCircle, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { MessageCircle, CheckCircle2, ShieldCheck, Cake, Heart, PartyPopper, Baby, Briefcase } from 'lucide-react';
 
 const occasionsList = [
-  { id: 'Birthday', icon: '🎂', label: 'Birthday' },
-  { id: 'Anniversary', icon: '💍', label: 'Anniversary' },
-  { id: 'Wedding', icon: '🎉', label: 'Wedding' },
-  { id: 'Baby Shower', icon: '👶', label: 'Baby Shower' },
-  { id: 'Corporate', icon: '🏢', label: 'Office Party' },
+  { id: 'Birthday', icon: Cake, label: 'Birthday' },
+  { id: 'Anniversary', icon: Heart, label: 'Anniversary' },
+  { id: 'Wedding', icon: PartyPopper, label: 'Wedding' },
+  { id: 'Baby Shower', icon: Baby, label: 'Baby Shower' },
+  { id: 'Corporate', icon: Briefcase, label: 'Office Party' },
 ];
 
 const flavoursList = [
@@ -109,7 +109,7 @@ function CustomCakes() {
                           : 'bg-[#FAF8F5] text-[#1F1511] border-[#EEDCCE] hover:bg-[#F4EFEA] hover:border-[#E8590C]/40'
                       }`}
                     >
-                      <span className="text-lg">{occ.icon}</span>
+                      <occ.icon className="w-5 h-5" aria-hidden="true" />
                       <span className="truncate">{occ.label}</span>
                     </button>
                   );

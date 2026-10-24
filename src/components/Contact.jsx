@@ -191,6 +191,7 @@ function Contact() {
                   type="text"
                   name="name"
                   placeholder="Your Full Name"
+                  aria-label="Your full name"
                   value={messageForm.name}
                   onChange={handleFormChange}
                   required
@@ -202,6 +203,7 @@ function Contact() {
                   type="tel"
                   name="phone"
                   placeholder="Your Phone Number"
+                  aria-label="Your phone number"
                   value={messageForm.phone}
                   onChange={handleFormChange}
                   required
@@ -213,6 +215,7 @@ function Contact() {
                   name="message"
                   rows="3"
                   placeholder="How can we assist? (e.g. Birthday cake theme query, party catering...)"
+                  aria-label="How can we assist?"
                   value={messageForm.message}
                   onChange={handleFormChange}
                   className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white transition-all font-body"

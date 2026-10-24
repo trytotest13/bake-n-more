@@ -83,6 +83,7 @@ function Menu() {
             <input
               type="text"
               placeholder="Search cakes, pastries, pizzas, burgers, dosas..."
+              aria-label="Search menu items"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-11 pr-10 py-3.5 rounded-2xl bg-[#FAF8F5] border border-[#EEDCCE] text-sm text-[#1F1511] placeholder:text-[#665E58]/60 focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white shadow-xs transition-all"
@@ -105,7 +106,7 @@ function Menu() {
             <div className="flex items-center gap-2 w-max mx-auto px-3">
               <button
                 ref={(el) => { chipRefs.current.all = el; }}
-                className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer whitespace-nowrap ${
+                className={`px-5 py-3 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer whitespace-nowrap ${
                   activeCategory === 'all'
                     ? 'bg-[#1F1511] text-white shadow-md shadow-[#1F1511]/20'
                     : 'bg-[#FAF8F5] text-[#5C5652] border border-[#EEDCCE] hover:bg-[#F4EFEA] hover:text-[#1F1511]'
@@ -118,7 +119,7 @@ function Menu() {
                 <button
                   key={cat.id}
                   ref={(el) => { chipRefs.current[cat.id] = el; }}
-                  className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer whitespace-nowrap ${
+                  className={`px-5 py-3 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer whitespace-nowrap ${
                     activeCategory === cat.id
                       ? 'bg-[#E8590C] text-white shadow-md shadow-[#E8590C]/25'
                       : 'bg-[#FAF8F5] text-[#5C5652] border border-[#EEDCCE] hover:bg-[#F4EFEA] hover:text-[#1F1511]'
