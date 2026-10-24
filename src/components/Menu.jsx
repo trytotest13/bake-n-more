@@ -86,7 +86,7 @@ function Menu() {
               aria-label="Search menu items"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-11 pr-10 py-3.5 rounded-2xl bg-[#FAF8F5] border border-[#EEDCCE] text-sm text-[#1F1511] placeholder:text-[#665E58]/60 focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white shadow-xs transition-all"
+              className="w-full pl-11 pr-10 py-3.5 rounded-2xl bg-[#FAF8F5] border border-[#EEDCCE] text-sm text-[#1F1511] placeholder:text-[#665E58] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white shadow-xs transition-all"
             />
             {searchQuery && (
               <button 
@@ -121,7 +121,7 @@ function Menu() {
                   ref={(el) => { chipRefs.current[cat.id] = el; }}
                   className={`px-5 py-3 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer whitespace-nowrap ${
                     activeCategory === cat.id
-                      ? 'bg-[#E8590C] text-white shadow-md shadow-[#E8590C]/25'
+                      ? 'bg-[#C2410C] text-white shadow-md shadow-[#C2410C]/25'
                       : 'bg-[#FAF8F5] text-[#5C5652] border border-[#EEDCCE] hover:bg-[#F4EFEA] hover:text-[#1F1511]'
                   }`}
                   onClick={() => setActiveCategory(cat.id)}
@@ -143,14 +143,14 @@ function Menu() {
         {/* Filtered Grid */}
         {filteredItems.length === 0 ? (
           <div className="text-center py-16 bg-[#FAF8F5] rounded-3xl border border-[#EEDCCE] max-w-md mx-auto p-8">
-            <div className="w-14 h-14 rounded-2xl bg-[#FFF2E2] flex items-center justify-center text-[#E8590C] mx-auto mb-3">
+            <div className="w-14 h-14 rounded-2xl bg-[#FFF2E2] flex items-center justify-center text-[#C2410C] mx-auto mb-3">
               <Utensils className="w-7 h-7" />
             </div>
             <h4 className="font-heading text-lg font-black text-[#1F1511]">No matching items found</h4>
             <p className="font-body text-xs text-[#665E58] mt-1">Try searching for cakes, burgers, pizzas, or reset the filters.</p>
             <button
               onClick={() => { setActiveCategory('all'); setSearchQuery(''); }}
-              className="mt-5 px-5 py-2.5 rounded-xl bg-[#E8590C] text-white text-xs font-bold shadow-md cursor-pointer hover:bg-[#D36730] transition-colors"
+              className="mt-5 px-5 py-2.5 rounded-xl bg-[#C2410C] text-white text-xs font-bold shadow-md cursor-pointer hover:bg-[#A83508] transition-colors"
             >
               Reset Filters
             </button>
@@ -190,10 +190,10 @@ function Menu() {
                 {/* Body Details */}
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#E8590C]">
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#C2410C]">
                       {item.categoryTitle}
                     </span>
-                    <h3 className="font-heading text-base font-bold text-[#1F1511] group-hover:text-[#E8590C] transition-colors mt-0.5 leading-snug">
+                    <h3 className="font-heading text-base font-bold text-[#1F1511] group-hover:text-[#C2410C] transition-colors mt-0.5 leading-snug">
                       {item.name}
                     </h3>
                     <p className="font-body text-xs text-[#665E58] mt-1.5 line-clamp-2 leading-relaxed">
@@ -227,13 +227,13 @@ function Menu() {
         {/* Floating WhatsApp Order Notice */}
         <div className="mt-14 text-center">
           <div className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#FAF8F5] border border-[#EEDCCE] shadow-xs text-xs sm:text-sm font-bold text-[#1F1511]">
-            <Sparkles className="w-4 h-4 text-[#E8590C]" />
+            <Sparkles className="w-4 h-4 text-[#C2410C]" />
             <span>Need customized cake flavours, party bulk packs, or takeaway counter special?</span>
             <a 
               href="https://wa.me/917571983301?text=Hi%20Bake%20n%20More!%20I%20have%20a%20special%20order%20request." 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-[#E8590C] underline hover:text-[#B34700]"
+              className="text-[#C2410C] underline hover:text-[#B34700]"
             >
               Chat on WhatsApp &rarr;
             </a>

@@ -38,7 +38,7 @@ function Hero() {
                 dotColor="#E8590C"
                 className="px-4 py-1.5 text-xs font-black shadow-xs tracking-wider uppercase bg-[#FFF2E2] text-[#B34700] border border-[#E8590C]/25"
               >
-                <MapPin className="w-3.5 h-3.5 text-[#E8590C]" />
+                <MapPin className="w-3.5 h-3.5 text-[#C2410C]" />
                 <span>Kalyanpur, Kanpur</span>
               </Badge>
 
@@ -93,7 +93,7 @@ function Hero() {
             {/* 3 Trust Feature Tags */}
             <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-[#EEDCCE] w-full mt-2">
               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2.5 text-center sm:text-left">
-                <div className="w-10 h-10 rounded-2xl bg-[#FFF2E2] flex items-center justify-center text-[#E8590C] shrink-0 shadow-xs border border-[#E8590C]/15">
+                <div className="w-10 h-10 rounded-2xl bg-[#FFF2E2] flex items-center justify-center text-[#C2410C] shrink-0 shadow-xs border border-[#E8590C]/15">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
@@ -153,7 +153,7 @@ function Hero() {
                   {/* Bottom Caption Bar */}
                   <div className="absolute bottom-3.5 left-3.5 right-3.5 sm:bottom-4 sm:left-4 sm:right-4 p-3.5 rounded-2xl bg-white/95 backdrop-blur-md shadow-lg border border-white/80 flex items-center justify-between z-10">
                     <div>
-                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#E8590C] block">
+                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#C2410C] block">
                         Signature Counter
                       </span>
                       <span className="text-xs sm:text-sm font-bold text-[#1F1511]">
@@ -177,9 +177,9 @@ function Hero() {
                 <div>
                   <div className="flex items-center gap-1.5">
                     <span className="block text-xs font-extrabold text-[#1F1511]">Custom 3D Bakes</span>
-                    <span className="px-1.5 py-0.5 rounded text-[9px] font-black bg-[#E8590C] text-white">NEW</span>
+                    <span className="px-1.5 py-0.5 rounded text-[9px] font-black bg-[#C2410C] text-white">NEW</span>
                   </div>
-                  <span className="text-[11px] text-[#E8590C] font-bold">Theme & Photo Cakes</span>
+                  <span className="text-[11px] text-[#C2410C] font-bold">Theme & Photo Cakes</span>
                   <div className="flex text-amber-500 mt-0.5">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-2.5 h-2.5 fill-current" />

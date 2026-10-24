@@ -60,10 +60,10 @@ function Contact() {
           {/* Card 1: WhatsApp */}
           <div className="p-7 rounded-3xl bg-white border border-[#EEDCCE] shadow-xs hover:shadow-lg transition-all flex flex-col justify-between">
             <div>
-              <div className="w-13 h-13 rounded-2xl bg-[#FFF2E2] flex items-center justify-center text-[#E8590C] mb-4 border border-[#E8590C]/15">
+              <div className="w-13 h-13 rounded-2xl bg-[#FFF2E2] flex items-center justify-center text-[#C2410C] mb-4 border border-[#E8590C]/15">
                 <MessageCircle className="w-7 h-7" />
               </div>
-              <Badge variant="accent" size="sm" className="mb-2 font-black bg-[#E8590C] text-white">
+              <Badge variant="accent" size="sm" className="mb-2 font-black bg-[#C2410C] text-white">
                 FASTEST RESPONSE
               </Badge>
               <h3 className="font-heading text-lg font-black text-[#1F1511]">WhatsApp Direct</h3>
@@ -105,7 +105,7 @@ function Contact() {
                 href={`tel:${phoneNumber}`}
                 className="w-full py-2.5 px-4 rounded-xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs font-bold text-[#1F1511] hover:bg-[#1F1511] hover:text-white hover:border-[#1F1511] transition-all flex items-center justify-center gap-2"
               >
-                <Phone className="w-4 h-4 text-[#E8590C]" />
+                <Phone className="w-4 h-4 text-[#C2410C]" />
                 <span>Call +91 75719 83301</span>
               </a>
             </div>
@@ -133,7 +133,7 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="w-full py-2.5 px-4 rounded-xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs font-bold text-[#1F1511] hover:bg-[#1F1511] hover:text-white hover:border-[#1F1511] transition-all flex items-center justify-center gap-2"
               >
-                <Navigation className="w-4 h-4 text-[#E8590C]" />
+                <Navigation className="w-4 h-4 text-[#C2410C]" />
                 <span>Get Directions</span>
               </a>
             </div>
@@ -147,7 +147,7 @@ function Contact() {
           {/* Address Card */}
           <div className="lg:col-span-6 p-7 sm:p-9 rounded-3xl bg-white border border-[#EEDCCE] shadow-xs flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-2 text-[#E8590C] mb-3">
+              <div className="flex items-center gap-2 text-[#C2410C] mb-3">
                 <MapPin className="w-5 h-5" />
                 <span className="text-xs font-black uppercase tracking-wider">Bakery Location</span>
               </div>
@@ -195,7 +195,7 @@ function Contact() {
                   value={messageForm.name}
                   onChange={handleFormChange}
                   required
-                  className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white transition-all font-body"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] placeholder:text-[#665E58] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white transition-all font-body"
                 />
               </div>
               <div>
@@ -207,7 +207,7 @@ function Contact() {
                   value={messageForm.phone}
                   onChange={handleFormChange}
                   required
-                  className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white transition-all font-body"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] placeholder:text-[#665E58] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white transition-all font-body"
                 />
               </div>
               <div>
@@ -218,7 +218,7 @@ function Contact() {
                   aria-label="How can we assist?"
                   value={messageForm.message}
                   onChange={handleFormChange}
-                  className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white transition-all font-body"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] placeholder:text-[#665E58] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white transition-all font-body"
                 ></textarea>
               </div>
               <ShineButton

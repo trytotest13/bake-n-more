@@ -26,7 +26,7 @@ export const ShineButton = ({
     primary:
       "bg-gradient-to-r from-[#6B3E26] via-[#854728] to-[#59321E] text-white shadow-[0_4px_14px_rgba(107,62,38,0.28)] hover:shadow-[0_6px_20px_rgba(107,62,38,0.38)]",
     accent:
-      "bg-gradient-to-r from-[#E9783F] via-[#F18B57] to-[#D9662C] text-white shadow-[0_4px_14px_rgba(233,120,63,0.32)] hover:shadow-[0_6px_20px_rgba(233,120,63,0.45)]",
+      "bg-gradient-to-r from-[#C2410C] via-[#C2410C] to-[#A83508] text-white shadow-[0_4px_14px_rgba(233,120,63,0.32)] hover:shadow-[0_6px_20px_rgba(233,120,63,0.45)]",
     gold:
       "bg-gradient-to-r from-[#F4C95D] via-[#F7D67C] to-[#E3B33D] text-[#2B211C] shadow-[0_4px_14px_rgba(244,201,93,0.35)] hover:shadow-[0_6px_20px_rgba(244,201,93,0.48)]",
     secondary:
@@ -42,7 +42,7 @@ export const ShineButton = ({
       className={cn(
         "group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl",
         "transition-all duration-300 ease-out active:scale-95 cursor-pointer",
-        "focus:outline-none focus:ring-2 focus:ring-[#E9783F]/50 focus:ring-offset-2",
+        "focus:outline-none focus:ring-2 focus:ring-[#C2410C] focus:ring-offset-2",
         "disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none",
         sizeStyles[size] || sizeStyles.md,
         variantStyles[variant] || variantStyles.primary,

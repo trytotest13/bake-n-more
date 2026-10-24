@@ -22,7 +22,7 @@ function StickyMobileActions() {
         href={`tel:${phoneNumber}`} 
         className="flex-1 py-3 px-2 rounded-2xl bg-[#1F1511] text-white flex items-center justify-center gap-2 text-xs font-bold tracking-wider active:scale-95 transition-transform"
       >
-        <Phone className="w-4 h-4 text-[#E8590C]" />
+        <Phone className="w-4 h-4 text-[#C2410C]" />
         <span>CALL</span>
       </a>
 
@@ -38,7 +38,7 @@ function StickyMobileActions() {
 
       <button 
         onClick={handleOrderClick} 
-        className="flex-1 py-3 px-2 rounded-2xl bg-[#E8590C] text-white flex items-center justify-center gap-2 text-xs font-bold tracking-wider shadow-sm active:scale-95 transition-transform cursor-pointer"
+        className="flex-1 py-3 px-2 rounded-2xl bg-[#C2410C] text-white flex items-center justify-center gap-2 text-xs font-bold tracking-wider shadow-sm active:scale-95 transition-transform cursor-pointer"
       >
         <ShoppingBag className="w-4 h-4" />
         <span>MENU</span>

@@ -88,6 +88,16 @@ function Gallery() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
+  // Close the lightbox with Escape for keyboard users
+  React.useEffect(() => {
+    if (!selectedPhoto) return;
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') setSelectedPhoto(null);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [selectedPhoto]);
+
   const filteredItems = activeFilter === 'all' 
     ? galleryItems 
     : galleryItems.filter(item => item.category === activeFilter);
@@ -131,7 +141,7 @@ function Gallery() {
         {/* 3D Perspective Showcase Carousel from Lightswind UI (tuned for elegance) */}
         <div className="mb-16 px-2">
           <div className="text-center mb-3">
-            <span className="text-xs font-bold text-[#E8590C] uppercase tracking-wider flex items-center justify-center gap-1.5">
+            <span className="text-xs font-bold text-[#C2410C] uppercase tracking-wider flex items-center justify-center gap-1.5">
               <Sparkles className="w-4 h-4" />
               Interactive Showcase • Swipe or Use Arrow Controls
             </span>
@@ -189,7 +199,7 @@ function Gallery() {
                 </span>
                 <div className="absolute inset-0 bg-[#1F1511]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="px-4 py-2 rounded-2xl bg-white text-[#1F1511] text-xs font-black shadow-lg flex items-center gap-2">
-                    <Eye className="w-4 h-4 text-[#E8590C]" />
+                    <Eye className="w-4 h-4 text-[#C2410C]" />
                     View Full Photo
                   </span>
                 </div>
@@ -197,10 +207,10 @@ function Gallery() {
 
               <div className="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#E8590C]">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#C2410C]">
                     {item.categoryName}
                   </span>
-                  <h3 className="font-heading text-lg font-bold text-[#1F1511] group-hover:text-[#E8590C] transition-colors mt-0.5">
+                  <h3 className="font-heading text-lg font-bold text-[#1F1511] group-hover:text-[#C2410C] transition-colors mt-0.5">
                     {item.title}
                   </h3>
                   <p className="font-body text-xs text-[#665E58] mt-1.5 line-clamp-2 leading-relaxed">
@@ -208,7 +218,7 @@ function Gallery() {
                   </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-[#EEDCCE]/60 flex items-center justify-between text-xs font-bold text-[#E8590C]">
+                <div className="mt-4 pt-3 border-t border-[#EEDCCE]/60 flex items-center justify-between text-xs font-bold text-[#C2410C]">
                   <span>Tap to view & order</span>
                   <span>&rarr;</span>
                 </div>
@@ -265,7 +275,7 @@ function Gallery() {
               <img src={selectedPhoto.image} alt={selectedPhoto.title} className="w-full h-full object-cover" />
             </div>
             <div className="p-6 sm:p-7">
-              <span className="inline-block px-3 py-1 rounded-full bg-[#FFF2E2] text-xs font-black text-[#E8590C] mb-2">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#FFF2E2] text-xs font-black text-[#C2410C] mb-2">
                 {selectedPhoto.tag}
               </span>
               <h3 className="font-heading text-2xl font-black text-[#1F1511]">{selectedPhoto.title}</h3>

@@ -24,7 +24,7 @@ function Footer() {
                 <span className="font-heading font-black text-2xl tracking-tight text-white">
                   BAKE 'N' MORE
                 </span>
-                <span className="text-[10px] tracking-[0.2em] font-extrabold text-[#E8590C] uppercase -mt-1">
+                <span className="text-[10px] tracking-[0.2em] font-extrabold text-[#C2410C] uppercase -mt-1">
                   Café & Artisan Bakery
                 </span>
               </div>
@@ -36,11 +36,11 @@ function Footer() {
 
             <div className="mt-4 flex flex-col gap-2 text-xs text-white/60 font-body">
               <div className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#E8590C] shrink-0" />
+                <MapPin className="w-3.5 h-3.5 text-[#C2410C] shrink-0" />
                 <span>Keshav Puram, Kalyanpur, Kanpur, UP 208019</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#E8590C] shrink-0" />
+                <Phone className="w-3.5 h-3.5 text-[#C2410C] shrink-0" />
                 <span>+91 75719 83301</span>
               </div>
               <div className="flex items-center gap-2">
@@ -52,7 +52,7 @@ function Footer() {
 
           {/* Quick Nav Links */}
           <div className="md:col-span-4 flex flex-col items-start">
-            <span className="font-heading text-xs font-black uppercase tracking-widest text-[#E8590C] mb-4">
+            <span className="font-heading text-xs font-black uppercase tracking-widest text-[#C2410C] mb-4">
               Explore
             </span>
             <div className="grid grid-cols-2 gap-y-2.5 gap-x-6 text-xs sm:text-sm font-bold text-white/80 font-body">
@@ -67,7 +67,7 @@ function Footer() {
 
           {/* Online Ordering Links */}
           <div className="md:col-span-3 flex flex-col items-start">
-            <span className="font-heading text-xs font-black uppercase tracking-widest text-[#E8590C] mb-4">
+            <span className="font-heading text-xs font-black uppercase tracking-widest text-[#C2410C] mb-4">
               Instant Ordering
             </span>
             <p className="font-body text-xs text-white/60 mb-4 leading-relaxed">
@@ -78,7 +78,7 @@ function Footer() {
                 href="https://wa.me/917571983301?text=Hi%20Bake%20n%20More!%20I%20would%20like%20to%20order."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors"
+                className="w-full py-2.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors"
               >
                 <span>Chat on WhatsApp</span>
               </a>

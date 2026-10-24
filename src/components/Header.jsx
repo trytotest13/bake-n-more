@@ -46,10 +46,10 @@ function Header() {
             <Sparkles className="w-5 h-5" />
           </div>
           <div className="flex flex-col">
-            <span className="font-heading font-black text-xl sm:text-2xl tracking-tight text-[#1F1511] group-hover:text-[#E8590C] transition-colors">
+            <span className="font-heading font-black text-xl sm:text-2xl tracking-tight text-[#1F1511] group-hover:text-[#C2410C] transition-colors">
               BAKE 'N' MORE
             </span>
-            <span className="text-[10px] sm:text-[11px] tracking-[0.2em] font-extrabold text-[#E8590C] uppercase -mt-1">
+            <span className="text-[10px] sm:text-[11px] tracking-[0.2em] font-extrabold text-[#C2410C] uppercase -mt-1">
               Café & Artisan Bakery
             </span>
           </div>
@@ -70,7 +70,7 @@ function Header() {
               href={link.href}
               className={`px-3.5 py-2 rounded-xl text-xs xl:text-sm font-bold transition-all ${
                 link.highlight
-                  ? 'text-[#E8590C] bg-[#FFF5EA] hover:bg-[#FFEAD4] border border-[#E8590C]/20 shadow-xs'
+                  ? 'text-[#C2410C] bg-[#FFF5EA] hover:bg-[#FFEAD4] border border-[#E8590C]/20 shadow-xs'
                   : 'text-[#5C5652] hover:text-[#1F1511] hover:bg-black/4'
               }`}
             >
@@ -83,9 +83,9 @@ function Header() {
         <div className="hidden md:flex items-center gap-3 sm:gap-4 shrink-0">
           <a
             href="tel:+917571983301"
-            className="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold text-[#1F1511] hover:text-[#E8590C] hover:bg-[#FAF8F5] transition-colors"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold text-[#1F1511] hover:text-[#C2410C] hover:bg-[#FAF8F5] transition-colors"
           >
-            <div className="w-7 h-7 rounded-lg bg-[#FAF8F5] border border-[#EEDCCE] flex items-center justify-center text-[#E8590C]">
+            <div className="w-7 h-7 rounded-lg bg-[#FAF8F5] border border-[#EEDCCE] flex items-center justify-center text-[#C2410C]">
               <Phone className="w-3.5 h-3.5" />
             </div>
             <span className="hidden lg:inline">+91 75719 83301</span>
@@ -108,7 +108,7 @@ function Header() {
           onClick={toggleMobileMenu}
           aria-label="Toggle navigation menu"
         >
-          {mobileMenuOpen ? <X className="w-5 h-5 text-[#E8590C]" /> : <MenuIcon className="w-5 h-5" />}
+          {mobileMenuOpen ? <X className="w-5 h-5 text-[#C2410C]" /> : <MenuIcon className="w-5 h-5" />}
         </button>
       </div>
 
@@ -128,7 +128,7 @@ function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMobileMenu}
-                className="px-4 py-3 rounded-xl text-sm font-bold text-[#1F1511] hover:bg-[#FAF8F5] hover:text-[#E8590C] transition-colors border-b border-black/4 last:border-none"
+                className="px-4 py-3 rounded-xl text-sm font-bold text-[#1F1511] hover:bg-[#FAF8F5] hover:text-[#C2410C] transition-colors border-b border-black/4 last:border-none"
               >
                 {link.label}
               </a>
@@ -150,7 +150,7 @@ function Header() {
               href="tel:+917571983301"
               className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#FAF8F5] border border-[#EEDCCE] text-xs font-bold text-[#1F1511]"
             >
-              <Phone className="w-3.5 h-3.5 text-[#E8590C]" />
+              <Phone className="w-3.5 h-3.5 text-[#C2410C]" />
               <span>Call Counter: +91 75719 83301</span>
             </a>
           </div>

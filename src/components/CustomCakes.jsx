@@ -88,8 +88,8 @@ function CustomCakes() {
             {/* Step 1: Occasion */}
             <div>
               <div className="flex items-center justify-between mb-3">
-                <span className="text-xs font-black text-[#E8590C] uppercase tracking-wider flex items-center gap-1.5">
-                  <span className="w-5 h-5 rounded-full bg-[#FFF2E2] text-[#E8590C] inline-flex items-center justify-center text-[11px] font-black">1</span>
+                <span className="text-xs font-black text-[#C2410C] uppercase tracking-wider flex items-center gap-1.5">
+                  <span className="w-5 h-5 rounded-full bg-[#FFF2E2] text-[#C2410C] inline-flex items-center justify-center text-[11px] font-black">1</span>
                   Select Occasion
                 </span>
                 <span className="text-[11px] font-bold text-[#665E58]">Custom theme available</span>
@@ -120,8 +120,8 @@ function CustomCakes() {
             {/* Step 2: Flavour */}
             <div>
               <div className="flex items-center justify-between mb-3">
-                <span className="text-xs font-black text-[#E8590C] uppercase tracking-wider flex items-center gap-1.5">
-                  <span className="w-5 h-5 rounded-full bg-[#FFF2E2] text-[#E8590C] inline-flex items-center justify-center text-[11px] font-black">2</span>
+                <span className="text-xs font-black text-[#C2410C] uppercase tracking-wider flex items-center gap-1.5">
+                  <span className="w-5 h-5 rounded-full bg-[#FFF2E2] text-[#C2410C] inline-flex items-center justify-center text-[11px] font-black">2</span>
                   Choose Flavour & Cream
                 </span>
                 <span className="text-[11px] font-bold text-[#665E58]">Freshly whipped daily</span>
@@ -143,7 +143,7 @@ function CustomCakes() {
                     >
                       <div className="flex justify-between items-center">
                         <span className="text-xs font-black text-[#1F1511]">{flavour.name}</span>
-                        <span className="text-[11px] font-black text-[#E8590C] bg-[#FFF2E2] px-2 py-0.5 rounded-md">
+                        <span className="text-[11px] font-black text-[#C2410C] bg-[#FFF2E2] px-2 py-0.5 rounded-md">
                           ₹{flavour.basePrice}/½kg
                         </span>
                       </div>
@@ -159,8 +159,8 @@ function CustomCakes() {
             {/* Step 3: Size & Dietary Preference */}
             <div>
               <div className="flex items-center justify-between mb-3">
-                <span className="text-xs font-black text-[#E8590C] uppercase tracking-wider flex items-center gap-1.5">
-                  <span className="w-5 h-5 rounded-full bg-[#FFF2E2] text-[#E8590C] inline-flex items-center justify-center text-[11px] font-black">3</span>
+                <span className="text-xs font-black text-[#C2410C] uppercase tracking-wider flex items-center gap-1.5">
+                  <span className="w-5 h-5 rounded-full bg-[#FFF2E2] text-[#C2410C] inline-flex items-center justify-center text-[11px] font-black">3</span>
                   Select Size & Servings
                 </span>
                 <span className="text-[11px] font-bold text-[#665E58]">Tiered options available</span>
@@ -176,7 +176,7 @@ function CustomCakes() {
                       onClick={() => setSelectedSize(size)}
                       className={`p-3 rounded-2xl border text-center transition-all cursor-pointer ${
                         isSelected
-                          ? 'border-[#E8590C] bg-[#E8590C] text-white shadow-md shadow-[#E8590C]/25 scale-[1.02]'
+                          ? 'border-[#C2410C] bg-[#C2410C] text-white shadow-md shadow-[#C2410C]/25 scale-[1.02]'
                           : 'border-[#EEDCCE] bg-[#FAF8F5] text-[#1F1511] hover:border-[#E8590C]/40 hover:bg-[#F4EFEA]'
                       }`}
                     >
@@ -226,7 +226,7 @@ function CustomCakes() {
                   value={cakeMessage}
                   onChange={(e) => setCakeMessage(e.target.value)}
                   maxLength={40}
-                  className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] placeholder:text-[#665E58]/60 focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white shadow-xs transition-all font-body"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#EEDCCE] bg-[#FAF8F5] text-xs sm:text-sm text-[#1F1511] placeholder:text-[#665E58] focus:outline-none focus:ring-2 focus:ring-[#E8590C] focus:bg-white shadow-xs transition-all font-body"
                 />
               </div>
 
@@ -293,7 +293,7 @@ function CustomCakes() {
                       Instant Estimate Quote
                     </span>
                     <div className="flex items-baseline gap-1">
-                      <span className="font-heading text-3xl sm:text-4xl font-black text-[#E8590C]">
+                      <span className="font-heading text-3xl sm:text-4xl font-black text-[#C2410C]">
                         ₹{estimatedPrice}
                       </span>
                       <span className="text-[11px] text-[#665E58] font-bold">approx. total</span>

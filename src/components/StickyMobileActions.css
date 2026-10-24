@@ -50,12 +50,12 @@
   }
 
   .sticky-action-btn.whatsapp-btn {
-    background-color: #25D366;
+    background-color: #075E54;
     color: var(--white);
   }
 
   .sticky-action-btn.order-btn {
-    background-color: var(--accent-color);
+    background-color: #C2410C;
     color: var(--white);
   }
 }

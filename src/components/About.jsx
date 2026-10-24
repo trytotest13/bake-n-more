@@ -14,7 +14,7 @@ const stats = [
 
 const trustHighlights = [
   {
-    icon: <Cake className="w-5 h-5 text-[#E8590C]" />,
+    icon: <Cake className="w-5 h-5 text-[#C2410C]" />,
     title: 'Freshly Made Daily',
     desc: 'Baking rounds start every morning at 9am so you always get warm, fragrant cakes, breads, and buns.',
   },
@@ -98,7 +98,7 @@ function About() {
                     suffix={stat.suffix}
                     decimals={stat.decimals || 0}
                     duration={2.5}
-                    className="font-heading text-3xl sm:text-4xl font-black text-[#E8590C]"
+                    className="font-heading text-3xl sm:text-4xl font-black text-[#C2410C]"
                   />
                   <span className="font-heading text-sm font-bold text-[#1F1511] mt-1">{stat.label}</span>
                   <span className="font-body text-[11px] text-[#665E58] mt-0.5">{stat.desc}</span>
@@ -108,7 +108,7 @@ function About() {
 
             {/* Quality Commitment Card */}
             <div className="p-6 rounded-3xl bg-white border border-[#EEDCCE] shadow-xs flex items-center gap-4">
-              <div className="w-13 h-13 rounded-2xl bg-[#FFF2E2] flex items-center justify-center text-[#E8590C] shrink-0 border border-[#E8590C]/15">
+              <div className="w-13 h-13 rounded-2xl bg-[#FFF2E2] flex items-center justify-center text-[#C2410C] shrink-0 border border-[#E8590C]/15">
                 <ShieldCheck className="w-7 h-7" />
               </div>
               <div>
